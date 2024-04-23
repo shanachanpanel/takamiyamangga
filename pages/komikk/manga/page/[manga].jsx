@@ -41,8 +41,8 @@ export default function Manga() {
         arr.push(
           <Pagination.Item
             key={p.name}
-            href={`/komiku/manga/page/${path}`}
-            as={`/komiku/manga/page/${path}`}
+            href={`/komikk/manga/page/${path}`}
+            as={`/komikk/manga/page/${path}`}
             style={{ fontFamily: "Poppins" }}
           >
             {p.name}

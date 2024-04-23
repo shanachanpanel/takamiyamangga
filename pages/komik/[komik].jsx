@@ -42,7 +42,7 @@ export default function Komik() {
   async function setToBookmark() {
     const endpoint = komik;
     const res = await fetch(
-      `https://komi.katowproject.app/api/komikindo/komik/${endpoint}`
+      `https://ranimev2-api.vercel.app/komiku/manga?${page}`
     );
     const json = await res.json();
     db.set(json);

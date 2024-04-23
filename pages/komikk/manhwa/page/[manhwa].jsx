@@ -13,7 +13,7 @@ export default function Manhwa() {
 
   async function setDaftar(page = 1) {
     const res = await fetch(
-      "https://komi.katowproject.app/api/komikindo/komikk/manhwa/page/" + page
+      "https://ranimev2-api.vercel.app/komiku/manhwa/page/" + page
     );
     const data = await res.json();
     setPage(data.mangas);

@@ -15,9 +15,9 @@ export async function fetchDaftar(page = 1) {
 }
 
 //Url Search
-export async function fetchSearch(query, page = 1) {
+export async function fetchSearch(query, keywrod, page = 1) {
   const res = await fetch(
-    `https://komi.katowproject.app/api/komikindo/search/${query}/?page=${page}`
+    `https://ranimev2-api.vercel.app/komiku/search?/${query}=keyword&page=${page}`
   );
   const data = await res.json();
   return data;
@@ -26,16 +26,16 @@ export async function fetchSearch(query, page = 1) {
 //Url Detail Komik
 export async function fetchDetail(endpoint) {
   const res = await fetch(
-    "https://komi.katowproject.app/api/komikindo/komik/" + endpoint
+    "https://ranimev2-api.vercel.app/komiku/comic/" + endpoint
   );
   const data = await res.json();
   return data;
 }
 
 //Url Chapter Detail Komik
-export async function fetchBaca(chapter) {
+export async function fetchBaca(endoint) {
   const res = await fetch(
-    "https://komi.katowproject.app/api/komikindo/chapter/" + chapter
+    "https://ranimev2-api.vercel.app/komiku/chapter/" + endpoint
   );
   const data = await res.json();
   return data;
